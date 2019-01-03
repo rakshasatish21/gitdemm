@@ -23,7 +23,7 @@ public class A3_Chat
 		String ss = driver.getTitle();
 		//System.out.println(ss);
 		Assert.assertTrue(ss.contains("BlueStone"));
-		System.out.println("Welcome displayed correctly");
+		System.out.println("Welcom displayed correctly");
 		driver.switchTo().frame("livechat-compact-view");
 		WebElement cb = driver.findElement(By.id("open-label"));
 		Thread.sleep(3000);
@@ -40,6 +40,7 @@ public class A3_Chat
 		Thread.sleep(3000);
 		 WebElement chat_mesg = driver.findElement(By.id("message-placeholder"));
 		Thread.sleep(2000);
+		chat_mesg.sendKeys("hi ");
 		
 		driver.close();
 		
