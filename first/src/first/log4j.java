@@ -1,6 +1,6 @@
 package first;
 
-import com.gargoylesoftware.htmlunit.WebConsole.Logger;
+//import com.gargoylesoftware.htmlunit.WebConsole.Logger;
 
 public class log4j {
 public static void main(String[] args) {
