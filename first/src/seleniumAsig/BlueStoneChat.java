@@ -33,15 +33,12 @@ public class BlueStoneChat {
 		name.sendKeys("Rahul");
 		driver.findElement(By.id("email")).sendKeys("007aksingh1990@gmail.com");
 		driver.findElement(By.id("container_4_4")).sendKeys("7982301671");
-		//driver.switchTo().defaultContent();
-//		WebElement startChat = driver.findElement(By.id("wiz-iframe"));
-//		driver.switchTo().frame(startChat);
-//		Thread.sleep(1000);
-		driver.findElement(By.id("contentDiv")).submit();
+
+		driver.findElement(By.id("container_10")).submit();
 		
 		
 		
-		//driver.quit();//span[@id='open-label']
+		driver.quit();
 	}
 
 }
